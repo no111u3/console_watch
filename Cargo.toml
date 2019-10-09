@@ -1,0 +1,16 @@
+[package]
+name = "console_watch"
+version = "0.0.0-nothing"
+edition = "2018"
+authors = ["Boris Vinogradov <no111u3@gmail.com>"]
+description = """
+Console watch written on rust
+"""
+keywords = ["terminal", "dashboard", "watch"]
+repository = "https://github.com/no111u3/console_watch"
+license = "Apache-2.0"
+readme = "README.md"
+
+[dependencies]
+tui = "0.6"
+termion = "1.5"
