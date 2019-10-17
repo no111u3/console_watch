@@ -14,9 +14,9 @@ fn main() -> Result<(), io::Error> {
     let backend = TermionBackend::new(stdout);
     let mut terminal = Terminal::new(backend)?;
 
-    let events: Events<Key> = Events::new(|_tx| || {}, |_tx| || {});
+    let _events: Events<Key> = Events::new(|_tx| || {}, |_tx| || {});
 
-    let mut app = App::new("Watch");
+    let app = App::new("Watch");
     let keys = io::stdin().keys();
 
     app.draw(&mut terminal)?;
